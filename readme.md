@@ -3,10 +3,9 @@ This repository contains shared work files for all team members in group 2 for t
 ## Members 
 - [Luke Prasser](https://github.com/luke185)
 - [Rhys Bush](https://github.com/RhysBush)
-- [Katlyn White](https://github.com/katlyn-whyte)
+- [Katlyn Whyte](https://github.com/katlyn-whyte)
 - [Wesley Gilsenan](https://github.com/WesleyJGilsenan)
 
-Test from Wes to make sure that this works
 
 it is standard for GitHub repos to have this file as an overview that displays when you 
 go to the root project URL. Include this for completeness with a basic overview and links to the 

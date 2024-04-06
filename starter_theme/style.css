@@ -78,9 +78,52 @@ html {
  * Remove the margin in all browsers.
  */
 
-header{
-	background-color: #800080;
+ /* .site-header{
+	background-color:#191970
+
+	
+ } */
+
+ .site-header {
+	position: relative;
+	padding: 1em;
+	color: white;
+	background-color: navy;
+	/* display: flex; */
+	/* text-align: center; */
  }
+ .site-branding{
+	min-height: 65px;
+	display: flex;
+	text-align: center;
+
+
+ }
+
+ .custom-logo-link{
+	margin-right: 10px;
+
+	img{
+		display: block;
+		height: 100px;
+		width: auto;
+
+	}
+	
+ }
+
+
+ .site-title{
+	margin: 0;
+	padding: 0;
+	font-size: 3em;
+	font-weight: 90;
+	line-height:3em;
+
+ }
+
+
+
 body {
 	margin: 0;
 }
@@ -541,7 +584,7 @@ a {
 }
 
 a:visited {
-	color: #800080;
+	color: #9ae8b3;
 }
 
 a:hover,

@@ -101,7 +101,7 @@ html {
  }
 
  .custom-logo-link{
-	margin-right: 10px;
+	margin-right: 1em;
 
 	img{
 		display: block;
@@ -112,15 +112,26 @@ html {
 	
  }
 
+ .site-branding_text{
+	display: flex;
+	flex-direction: column;
+	justify-content:column;
+	height: 65px;
+ }
+
 
  .site-title{
 	margin: 0;
 	padding: 0;
 	font-size: 3em;
-	font-weight: 90;
-	line-height:3em;
+	font-weight: 150;
+	/* line-height:3em; */
 
  }
+/* 
+ .main-navigation{
+	justify-content: space-between;
+ } */
 
 
 
@@ -580,17 +591,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #ffffff;
 }
 
 a:visited {
-	color: #9ae8b3;
+	color: #dee916;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #9c9c9d;
 }
 
 a:focus {
@@ -697,13 +708,15 @@ textarea {
 .main-navigation {
 	display: block;
 	width: 100%;
+
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	margin: 10;
+	padding-left: 10;
+	text-decoration: underline;
 }
 
 .main-navigation ul ul {
@@ -736,7 +749,8 @@ textarea {
 }
 
 .main-navigation li {
-	position: relative;
+	position: flex;
+	margin: 0 15px;
 }
 
 .main-navigation a {

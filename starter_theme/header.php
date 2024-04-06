@@ -27,8 +27,10 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<?php the_custom_logo();?>
+			<div class="site-branding_text">
 			<?php
-			the_custom_logo();
+
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
@@ -45,6 +47,9 @@
 				?>
 				<p class="site-description"><?php echo $starter_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
+			</div><!-- .site-branding_text -->
+
+		
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -58,4 +63,16 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+	<nav id="secondary-site-navigation" class="secondary-navigation">
+		<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'starter_theme' ); ?></button>
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-2', // Change to 'menu-2' for the secondary menu
+				'menu_id'        => 'secondary-menu', // Assign a unique ID to the secondary menu
+			)
+		);
+		?>		
+	</nav><!-- #secondary-site-navigation -->
 	</header><!-- #masthead -->

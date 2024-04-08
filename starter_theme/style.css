@@ -87,8 +87,8 @@ html {
  .site-header {
 	position: relative;
 	padding: 1em;
-	color: white;
-	background-color: navy;
+	color: #fff;
+	background-color: #22547D;
 	/* display: flex; */
 	/* text-align: center; */
  }
@@ -117,6 +117,8 @@ html {
 	flex-direction: column;
 	justify-content:column;
 	height: 65px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
  }
 
 
@@ -124,8 +126,9 @@ html {
 	margin: 0;
 	padding: 0;
 	font-size: 3em;
-	font-weight: 150;
+	/* font-weight: 150; */
 	/* line-height:3em; */
+	font-weight: 500;
 
  }
 /* 
@@ -137,6 +140,7 @@ html {
 
 body {
 	margin: 0;
+	background-color: #9c9c9d;
 }
 
 /**
@@ -144,7 +148,14 @@ body {
  */
 main {
 	display: block;
+	background-color: #fff;
+	padding: 10px;
+	
 }
+/* 
+footer{
+	background-color: #21759b;
+} */
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -534,7 +545,7 @@ body {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #fff;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -591,11 +602,12 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #ffffff;
+	color: #BAA347;
 }
 
 a:visited {
-	color: #dee916;
+	color: #BAA347;
+	font-weight: 200em;
 }
 
 a:hover,
@@ -708,7 +720,9 @@ textarea {
 .main-navigation {
 	display: block;
 	width: 100%;
-
+	font-size: 25px;
+	font-weight: 500;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-navigation ul {
@@ -717,6 +731,7 @@ textarea {
 	margin: 10;
 	padding-left: 10;
 	text-decoration: underline;
+	
 }
 
 .main-navigation ul ul {

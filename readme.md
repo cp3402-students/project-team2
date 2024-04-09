@@ -6,6 +6,7 @@ This repository contains shared work files for all team members in group 2 for t
 - [Katlyn Whyte](https://github.com/katlyn-whyte)
 - [Wesley Gilsenan](https://github.com/WesleyJGilsenan)
 
-it is standard for GitHub repos to have this file as an overview that displays when you 
-go to the root project URL. Include this for completeness with a basic overview and links to the 
-other documentation files.
+## Documentation Files
+- [theme.md](https://github.com/cp3402-students/project-team2/blob/main/theme.md) - Includes relevant information about what features your theme has, files that would need editing, design decisions, colours, etc
+- [site.md](https://github.com/cp3402-students/project-team2/blob/main/site.md) - Includes relevant information about how to manage and add content to the website 
+- [deployment.md](https://github.com/cp3402-students/project-team2/blob/main/Deployment.md) - Includes relevant information about development and deployment workflow

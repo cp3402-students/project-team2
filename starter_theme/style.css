@@ -152,6 +152,11 @@ main {
 	padding: 10px;
 	
 }
+
+.site-footer{
+	background-color: #22547D;
+	height: 65px;
+}
 /* 
 footer{
 	background-color: #21759b;
@@ -602,18 +607,19 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #BAA347;
+	color: navy;
+	text-decoration: none;
 }
 
 a:visited {
-	color: #BAA347;
+	color: purple;
 	font-weight: 200em;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #9c9c9d;
+	color: #BAA347;
 }
 
 a:focus {
@@ -717,7 +723,132 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+
+
 .main-navigation {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 10;
+    padding-left: 10;
+    text-decoration: none;
+}
+
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(234, 231, 231, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+}
+
+.clickable-area {
+    padding: 10px; /* Adjust padding to increase clickable area */
+    display: inline-block; /* Ensures the container only takes up as much space as its content */
+    /* Optional: Add styling to make the clickable area visually distinguishable */
+    border: 1px solid #22547D;
+    border-radius: 5px;
+    background-color:#22547D;
+    cursor: pointer;
+}
+
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    display: block;
+    left: auto;
+}
+
+.main-navigation ul ul a {
+    width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+
+.main-navigation li {
+    position: flex;
+    margin: 0 15px;
+}
+
+/* Style navigation menu links */
+.main-navigation a,
+.clickable-area a {
+    color: #BAA347;
+}
+
+/* Style navigation menu links when visited */
+.main-navigation a:visited,
+.clickable-area a:visited {
+    color: #BAA347;
+    font-weight: 200;
+}
+
+/* Style navigation menu links on hover, focus, and active */
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active,
+.clickable-area a:hover,
+.clickable-area a:focus,
+.clickable-area a:active {
+    color: white;
+}
+
+/* Remove outline on focus for all links */
+a:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 37.5em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+    }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+    display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    text-align: end;
+    flex: 1 0 50%;
+}
+
+/* .main-navigation {
 	display: block;
 	width: 100%;
 	font-size: 25px;
@@ -742,6 +873,7 @@ textarea {
 	left: -999em;
 	z-index: 99999;
 }
+
 
 .main-navigation ul ul ul {
 	left: -999em;
@@ -774,7 +906,7 @@ textarea {
 }
 
 /* Small menu. */
-.menu-toggle,
+/* .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
@@ -815,7 +947,7 @@ textarea {
 .post-navigation .nav-next {
 	text-align: end;
 	flex: 1 0 50%;
-}
+}  */
 
 /* Posts and pages
 --------------------------------------------- */
@@ -823,9 +955,32 @@ textarea {
 	display: block;
 }
 
+.entry-header{
+	font-size: 1.2em;
+	font-weight: 200;
+	color: orange;
+
+
+}
+
+.entry-header a{
+	color: black;
+}
+
+.entry-header a:hover{
+	color: #BAA347;
+}
+
+.entry-title{
+	margin: .125em 0 .125em;
+	font-size: 1.5em;
+	color: orangered;
+
+}
+
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 2 0 1.5em;
 }
 
 .updated:not(.published) {

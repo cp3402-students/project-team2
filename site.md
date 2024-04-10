@@ -1,19 +1,31 @@
 # Creating new site content
 ## Post or Page?
-- For GEMs and courses use **posts**
+- For GEMs, courses and U3A locations use **posts**
 - For general site pages (e.g. 'about us'), use **pages**
-## Posts
-### New
-1. Before creating the post make sure to upload the GEM pdf file to the media library 
+## Create New Post
+### GEM
+1. Before creating the post make sure to upload the GEM PDF file to the media library 
 2. Go to ***posts > add new post***
-3. Use the WordPress block editor to create post
-	1. For GEMS, the general layout is as follows:
-	   - Heading `GEMs <month> <year> issue`
-	   - Download link for GEM pdf file 
-	2. Ensure to add to 'GEM' tag and category 
-4. Publish. You may wish to change the publish date if you want the GEM to be published on a certain day, for a given release schedule 
-### Update
-1. Go to ***posts > all posts*** then find the post you wish to edit. You may want to use the search bar or category filter to make finding the post easier (GEMS are in the 'GEM' category and courses are in the 'courses' category)
+3. Use the WordPress block editor to create post. Heading of post will be `GEM <month> <year> issue`. For the content of the post just have a download link to the GEM PDF file with the caption `Download GEM PDF file`
+4. Ensure to add to `GEM` tag and category 
+5. Publish. You may wish to change the publish date if you want the GEM to be published on a certain day, for a given release schedule 
+### Course
+1. Before creating the post make sure to upload the course PDF/s file to the media library 
+2. Go to ***posts > add new post***
+3. Use the WordPress block editor to create post, heading of post will be the name of the course 
+4. Content of the post will be as follows:
+	- Small paragraph containing introduction to course
+	- PDF download link/s, caption same as file name
+5. Ensure to add to `course` tag and category 
+6. Publish 
+### Location
+1. Go to ***posts > add new post***
+2. Use the WordPress block editor to create post, heading of post will be the name of the location (e.g. *U3A Townsville Inc.*) 
+3. For the page content, use the *Location Template* pattern and fill out the details
+4. Add to `location` tag and category 
+6. Publish 
+## Update existing Post
+1. Go to ***posts > all posts*** then find the post you wish to edit. You may want to use the search bar or category filter to make finding the post easier (courses are in the 'courses' category, GEMS are in the 'GEM' category and locations are in the 'location' category)
 2. Once the desired post is found click ***edit***
 3. Edit the post using the WordPress block editor to make necessary changes 
 4. Update when finished

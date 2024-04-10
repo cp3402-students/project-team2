@@ -607,19 +607,21 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: navy;
+	color: #BAA347;
 	text-decoration: none;
+	font-weight: 400;
 }
 
 a:visited {
-	color: purple;
+	color: #BAA347;
 	font-weight: 200em;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #BAA347;
+	color: #21759b;
+	text-decoration: underline;
 }
 
 a:focus {
@@ -958,7 +960,7 @@ a:focus {
 .entry-header{
 	font-size: 1.2em;
 	font-weight: 200;
-	color: orange;
+	color: black;
 
 
 }
@@ -972,11 +974,51 @@ a:focus {
 }
 
 .entry-title{
-	margin: .125em 0 .125em;
+	margin: .125em 0 .25em;
 	font-size: 1.5em;
-	color: orangered;
+	color: black;
 
 }
+
+.entry-title a{
+	color: black;
+	text-decoration: none;
+}
+
+.entry-meta {
+	font-size: 90%;
+
+}
+
+.entry-meta a{
+	font-weight: 700;
+	text-decoration: none;
+	
+
+}
+
+.entry-meta a:hover {
+	color: #BAA347;
+	text-decoration: underline;
+}
+
+.byline after {
+
+	content:"|";
+	margin: 0 .5em;
+}
+
+.cat-links {
+	font-size: 90%;
+	font-weight: 650;
+}
+
+.cat-links a {
+	text-decoration: none;
+	color: #111;
+	
+}
+
 
 .post,
 .page {

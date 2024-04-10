@@ -153,6 +153,37 @@ main {
 	
 }
 
+.site-content {
+	padding: 1em;
+	
+}
+
+
+/* .hentry{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+} */
+
+.entry-header{
+	width: 100%;
+	flex: 1 0 100%;
+}
+
+.post-content {
+	width: 60%;
+	background-color: chartreuse;
+} 
+
+.widget-area {
+	width: 30%;
+	color: crimson;
+
+} 
+
+
+
 .site-footer{
 	background-color: #22547D;
 	height: 65px;

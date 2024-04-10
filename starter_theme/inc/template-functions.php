@@ -18,7 +18,9 @@ function starter_theme_body_classes( $classes ) {
 	}
 
 	// Adds a class of no-sidebar when there is no sidebar present.
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if ( is_active_sidebar( 'sidebar-1' ) ) {
+		$classes[] = 'has-sidebar';
+	} else{
 		$classes[] = 'no-sidebar';
 	}
 
@@ -35,3 +37,9 @@ function starter_theme_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'starter_theme_pingback_header' );
+
+function starter_theme_output_bottom_widgets() {
+    if ( is_active_sidebar( 'sidebar-1' ) ) {
+        dynamic_sidebar( 'sidebar-1' );
+    }
+}

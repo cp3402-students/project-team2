@@ -16,12 +16,12 @@ Welcome to the development guide for our starter theme! This guide will help new
 
 Here's a brief overview of the main files and directories in our theme:
 
-- inc/template-tag.php: 
-- template-parts/content.php: 
+- inc/template-tag.php: Controls WordPress post meta data .
+- template-parts/content.php: Controls WordPress post content.
 - footer.php: Controls the footer section of the theme.
 - functions.php: Handles theme functions and includes.
 - header.php: Controls the header section of the theme.
-- sidebar.php: 
+- sidebar.php: Controls the sidebar.
 - single.php: Template for single blog posts.
 - style.css: Contains the main stylesheet for the theme.
 
@@ -46,14 +46,16 @@ The layout of our theme follows the standard design approach, while focusing on 
 ## Customization
 
 ### template-tag.php
-what we did
+Updated the WordPress post system to display Published on (date) and written by (author).
 
 ### content.php
-what we did
+Updated the WordPress post system to display posts in a particular way.
 
 ### footer.php
 
+
 ### functions.php
+
 
 ### header.php
 

@@ -51,7 +51,7 @@
 
 		
 		</div><!-- .site-branding -->
-
+		<div class = "clickable-area">
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'starter_theme' ); ?></button>
 			<?php
@@ -63,16 +63,17 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		</div>
 
-	<nav id="secondary-site-navigation" class="secondary-navigation">
+	<!-- <nav id="secondary-site-navigation" class="secondary-navigation">
 		<button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'starter_theme' ); ?></button>
-		<?php
-		wp_nav_menu(
-			array(
-				'theme_location' => 'menu-2', // Change to 'menu-2' for the secondary menu
-				'menu_id'        => 'secondary-menu', // Assign a unique ID to the secondary menu
-			)
-		);
-		?>		
-	</nav><!-- #secondary-site-navigation -->
+		<?php 
+		// wp_nav_menu(
+			// array(
+				// 'theme_location' => 'menu-2', // Change to 'menu-2' for the secondary menu
+				// 'menu_id'        => 'secondary-menu', // Assign a unique ID to the secondary menu
+			// )
+		// );
+		?>		 -->
+	<!-- </nav>#secondary-site-navigation -->
 	</header><!-- #masthead -->

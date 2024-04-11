@@ -51,7 +51,7 @@ Updated the WordPress post system to display Published on (date) and written by 
 
 
 
-#### To edit the message about when a post is published, go to lines 14 to 32 and find the function starter_theme_posted_on()
+#### To edit the message about when a post is published, find the function starter_theme_posted_on()
 
 ```
 	function starter_theme_posted_on() {
@@ -76,7 +76,7 @@ Updated the WordPress post system to display Published on (date) and written by 
 ```
 
 
-#### To edit the message about who wrote an article, go to lines 43 - 48 and find the function starter_theme_posted_by()
+#### To edit the message about who wrote an article, find the function starter_theme_posted_by()
 
 ```
 function starter_theme_posted_by() {
@@ -88,7 +88,7 @@ function starter_theme_posted_by() {
 ```
 ### functions.php
 
-#### To edit the size of the logo with customiser support, go to lines 87 to 104 and find add_theme_support.
+#### To edit the size of the logo with customiser support, find add_theme_support.
 
 ```
 add_theme_support(
@@ -104,7 +104,7 @@ add_theme_support(
 
 ### header.php
 
-#### To edit the clickable area, go to lines 54 to 66 and find the div class clickable-area.
+#### To edit the clickable area, find div class = "clickable-area".
 
 ```
 		<div class = "clickable-area">
@@ -122,7 +122,7 @@ add_theme_support(
 		</div>
 ```
 
-#### To edit the secondary site navigation, go to lines 68 to 77 and find nav id="secondary-site-navigation".
+#### To edit the secondary site navigation, find nav id="secondary-site-navigation".
 
 ```
 	 <nav id="secondary-site-navigation" class="secondary-navigation">
@@ -140,7 +140,7 @@ add_theme_support(
 
 ### style.css
 
-#### To update the site header css, go to lines 88 to 151.
+#### To update the site header css, go to site header (.site-header).
 
 ```
 /* Site Header
@@ -208,9 +208,12 @@ add_theme_support(
     background-color: #BAA347; /* Change the background color on hover */
 }
 ```
-#### To update the footer css, go to lines 201 to 204.
+#### To update the footer css, find Site Footer (.site-footer).
 
 ```
+/* Site Footer
+	 ========================================================================== */
+
 .site-footer{
 	background-color: #22547D;
 	height: 65px;
@@ -218,9 +221,12 @@ add_theme_support(
 ```
 
 
-#### To update the links css, go to lines 652 to 680.
+#### To update the links css, go to Links.
 
 ```
+/* Links
+--------------------------------------------- */
+
 a {
 	color: #BAA347;
 	text-decoration: none;
@@ -250,9 +256,12 @@ a:active {
 
 ```
 
-#### To update the navigation css, go to  lines 771 to 896.
+#### To update the navigation css, find Navigation (.main-navigation)
 
 ```
+/* Navigation
+--------------------------------------------- */
+
 .main-navigation {
     display: block;
     width: 100%;
@@ -377,7 +386,7 @@ a:focus {
 }
 ```
 
-#### To update Posts and pages, go to lines 999 to 1086.
+#### To update Posts and pages, go to posts and pages.
 
 ```
 /* Posts and pages

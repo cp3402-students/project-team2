@@ -140,4 +140,333 @@ add_theme_support(
 
 ### style.css
 
-#### 
+#### To update the site header css, go to lines 88 to 151.
+
+```
+/* Site Header
+	 ========================================================================== */
+
+ .site-header {
+	position: relative;
+	padding: 1em;
+	color: #fff;
+	background-color: #22547D;
+	/* display: flex; */
+	/* text-align: center; */
+ }
+ .site-branding{
+	min-height: 65px;
+	display: flex;
+	text-align: center;
+
+
+ }
+
+ .custom-logo-link{
+	margin-right: 1em;
+
+	img{
+		display: block;
+		height: 100px;
+		width: auto;
+
+	}
+	
+ }
+
+ .site-branding_text{
+	display: flex;
+	flex-direction: column;
+	justify-content:column;
+	height: 65px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+
+
+ .site-title{
+	margin: 0;
+	padding: 0;
+	font-size: 3em;
+	/* font-weight: 150; */
+	/* line-height:3em; */
+	font-weight: 500;
+
+ }
+
+ .header-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #BAA347; /* Change the background color as needed */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto; /* Push the button to the far right */
+}
+
+.header-button:hover {
+    background-color: #BAA347; /* Change the background color on hover */
+}
+```
+#### To update the footer css, go to lines 201 to 204.
+
+```
+.site-footer{
+	background-color: #22547D;
+	height: 65px;
+}
+```
+
+
+#### To update the links css, go to lines 652 to 680.
+
+```
+a {
+	color: #BAA347;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+a:visited {
+	color: #BAA347;
+	font-weight: 200em;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #21759b;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+```
+
+#### To update the navigation css, go to  lines 771 to 896.
+
+```
+.main-navigation {
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-navigation ul {
+    display: none;
+    list-style: none;
+    margin: 10;
+    padding-left: 10;
+    text-decoration: none;
+}
+
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(234, 231, 231, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+}
+
+.clickable-area {
+    padding: 10px; /* Adjust padding to increase clickable area */
+    display: inline-block; /* Ensures the container only takes up as much space as its content */
+    /* Optional: Add styling to make the clickable area visually distinguishable */
+    border: 1px solid #22547D;
+    border-radius: 5px;
+    background-color:#22547D;
+    cursor: pointer;
+}
+
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    display: block;
+    left: auto;
+}
+
+.main-navigation ul ul a {
+    width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+
+.main-navigation li {
+    position: flex;
+    margin: 0 15px;
+}
+
+/* Style navigation menu links */
+.main-navigation a,
+.clickable-area a {
+    color: #BAA347;
+}
+
+/* Style navigation menu links when visited */
+.main-navigation a:visited,
+.clickable-area a:visited {
+    color: #BAA347;
+    font-weight: 200;
+}
+
+/* Style navigation menu links on hover, focus, and active */
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active,
+.clickable-area a:hover,
+.clickable-area a:focus,
+.clickable-area a:active {
+    color: white;
+}
+
+/* Remove outline on focus for all links */
+a:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 37.5em) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: flex;
+    }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+    display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    text-align: end;
+    flex: 1 0 50%;
+}
+```
+
+#### To update Posts and pages, go to lines 999 to 1086.
+
+```
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.entry-header{
+	font-size: 1.2em;
+	font-weight: 200;
+	color: black;
+
+
+}
+
+.entry-header a{
+	color: black;
+}
+
+.entry-header a:hover{
+	color: #BAA347;
+}
+
+.entry-title{
+	margin: .125em 0 .25em;
+	font-size: 1.5em;
+	color: black;
+
+}
+
+.entry-title a{
+	color: black;
+	text-decoration: none;
+}
+
+.entry-meta {
+	font-size: 90%;
+
+}
+
+.entry-meta a{
+	font-weight: 700;
+	text-decoration: none;
+	
+
+}
+
+.entry-meta a:hover {
+	color: #BAA347;
+	text-decoration: underline;
+}
+
+.byline after {
+
+	content:"|";
+	margin: 0 .5em;
+}
+
+.cat-links {
+	font-size: 90%;
+	font-weight: 650;
+}
+
+.cat-links a {
+	text-decoration: none;
+	color: #111;
+	
+}
+
+
+.post,
+.page {
+	margin: 2 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+```
+

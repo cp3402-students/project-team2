@@ -1,12 +1,25 @@
-# How to update theme
+# Theme Development Guide
 
-## Colours through out the theme
+## Overview
+
+Welcome to the development guide for our starter theme! This guide will help new developers understand the structure, features, and design decisions behind our theme.
+
+## Files and Directory Structure
+
+Here's a brief overview of the main files and directories in our theme:
+
+Files here
 
 
-## Header
+
+## Design Decisions
 
 
-## Main
+## Typography
 
 
-## Footer
+## Layout
+
+
+## Customization
+

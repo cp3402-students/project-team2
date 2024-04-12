@@ -93,9 +93,7 @@ html {
  .site-header {
 	position: relative;
 	padding: 1em;
-	/* color: #fff; */
-	/* background-color: #22547D; */
-	background-color: green;
+	background-color: #22547D;
 
  }
  .site-branding{
@@ -124,7 +122,7 @@ html {
 	justify-content:column;
 	height: 65px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: red;
+	color: white;
 
  }
 

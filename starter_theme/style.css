@@ -27,6 +27,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # Generic
 	- Normalize
+	- Site Header
+	- Site Footer
 	- Box sizing
 # Base
 	- Typography
@@ -91,10 +93,10 @@ html {
  .site-header {
 	position: relative;
 	padding: 1em;
-	color: #fff;
-	background-color: #22547D;
-	/* display: flex; */
-	/* text-align: center; */
+	/* color: #fff; */
+	/* background-color: #22547D; */
+	background-color: green;
+
  }
  .site-branding{
 	min-height: 65px;
@@ -122,6 +124,7 @@ html {
 	justify-content:column;
 	height: 65px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: red;
 
  }
 
@@ -133,6 +136,7 @@ html {
 	/* font-weight: 150; */
 	/* line-height:3em; */
 	font-weight: 500;
+	/* color: red; */
 
  }
 
@@ -187,25 +191,24 @@ main {
 
 .post-content {
 	width: 60%;
-	background-color: chartreuse;
 } 
 
 .widget-area {
 	width: 30%;
-	color: crimson;
 
 } 
 
 
-
+/* Site Footer
+	 ========================================================================== */
 .site-footer{
 	background-color: #22547D;
-	height: 65px;
+	
+	height: 100px;
+
+
 }
-/* 
-footer{
-	background-color: #21759b;
-} */
+
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -592,6 +595,8 @@ big {
 --------------------------------------------- */
 body {
 	background: #22547D;
+	/* background: green; */
+
 }
 
 hr {
@@ -895,107 +900,6 @@ a:focus {
     flex: 1 0 50%;
 }
 
-/* .main-navigation {
-	display: block;
-	width: 100%;
-	font-size: 25px;
-	font-weight: 500;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 10;
-	padding-left: 10;
-	text-decoration: underline;
-	
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	display: block;
-	left: auto;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	position: flex;
-	margin: 0 15px;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-/* .menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-}
-
-.site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
-	margin: 0 0 1.5em;
-}
-
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-	display: flex;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	flex: 1 0 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	text-align: end;
-	flex: 1 0 50%;
-}  */
-
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1078,6 +982,7 @@ a:focus {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	font-size: 20px;
 }
 
 .page-links {

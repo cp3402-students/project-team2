@@ -175,36 +175,39 @@ main {
 }
 
 
-/* .hentry{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-} */
-
-.entry-header{
-	width: 100%;
-	flex: 1 0 100%;
-}
-
-.post-content {
-	width: 60%;
-} 
-
-.widget-area {
-	width: 30%;
-
-} 
-
-
 /* Site Footer
 	 ========================================================================== */
-.site-footer{
-	background-color: #22547D;
+
+
+	.custom-footer-text {
+	font-size: 25px;
+	color: #22547D;
+	margin-top: 10px;
+	color: white;
+	margin-left: 10px;
+}
+
+.site-footer .footer-social a {
+	color: #fff; /* White color */
+	font-size: 30px; /* Adjust the size as needed */
+	margin-left: 10px; 
+	margin-right: 40px;
+	margin-top: 10px;
+
+}
+
+
+.site-info{
+	color: #22547D;
+}
+
+
+.site-footer .copyright {
+	color: white;
+	font-size: 1em; 
+	text-align: center;
+	margin-top: 40px;
 	
-	height: 100px;
-
-
 }
 
 
